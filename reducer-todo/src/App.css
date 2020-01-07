@@ -7,13 +7,14 @@
 
 body{
   margin: 0;
+  background: lightblue;
 }
 
 .app-container{
   width: 60%;
   height: 100vh;
   margin: 0 auto;
-  background:#feea74;
+  background:lightpink;
 }
 
 .title {

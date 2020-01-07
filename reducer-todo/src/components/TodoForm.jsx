@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-const TodoForm = ({addItem}) =>{
+const TodoForm = ({addItem, clearCompleted}) =>{
 
     const [item, setItem] = useState({item: ''})
 
@@ -20,8 +20,9 @@ const TodoForm = ({addItem}) =>{
             }}
             onChange={handleChange}
             >
-                <input value={item.item} placeholder="Type your new item and hit [Enter] " type="text"/>
+                <input onChange={()=>{}} value={item.item} placeholder="Type your new item and hit [Enter] " type="text"/>
             </form>
+            <button onClick={()=>{clearCompleted()}}>Clear Completed</button>
         </div>
     );
 }
